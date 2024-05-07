@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 .6rem;
+    padding: .6rem 1rem;
+    transition: linear .1s;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background: white;
+    color: #2b2b2b;
+    transition: linear .1s;
+}
+
+.active {
+    background: white;
+    color: #2b2b2b;
+}

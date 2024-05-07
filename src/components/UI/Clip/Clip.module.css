@@ -1,0 +1,8 @@
+.clip {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #000000;
+    background: #ffffff;
+    padding: .5rem 1.2rem;
+    clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+}
