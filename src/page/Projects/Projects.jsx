@@ -5,8 +5,8 @@ import cl from './Projects.module.css'
 const Projects = () => {
 
     const [projects, setProjects] = useState([
-        {id: 0, name: 'name', desc: 'test description', image: 'template.jpeg', link: '#'},
-        {id: 1, name: 'game', desc: 'test description 123', image: 'template.jpeg', link: '#'},
+        {id: 0, name: 'FRM', desc: 'frontend roadmap - настольная книга с основами веб технологий', image: 'template.jpeg', link: '#'},
+        {id: 1, name: '300$', desc: 'Игра на vanilla JS.', image: 'template.jpeg', link: '#'},
         {id: 3, name: 'site', desc: 'test description 321', image: 'template.jpeg', link: '#'},
     ]);
 
