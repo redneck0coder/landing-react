@@ -1,16 +1,17 @@
+import {Link} from "react-router-dom";
 import ArticleList from "../../components/ArticleList/ArticleList.jsx";
-import Nav from "../../components/Nav/Nav.jsx"
+import Container from "../../components/Container /Container.jsx";
+import Navbar from "../../components/Navbar/Navbar.jsx";
 import cl from './Blog.module.css'
 
 const Blog = () => {
     return (
         <>
-            <div className='navbar'>
-                <Nav></Nav>
-            </div>
-            <section className={cl.container}>
+            <Navbar/>
+            <Container>
+                <Link className={cl.link} to={'/blog/create'}>+</Link>
                 <ArticleList/>
-            </section>
+            </Container>
         </>
 
     );

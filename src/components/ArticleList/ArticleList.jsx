@@ -12,8 +12,8 @@ const ArticleList = () => {
     ])
 
     return (
-        <div>
-            {articles.map((article, index) => article.published && <Article article={article} />)}
+        <div className={cl.list}>
+            {articles.map((article) => article.published && <Article key={article.id} article={article} />)}
         </div>
     );
 };

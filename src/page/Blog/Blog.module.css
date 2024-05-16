@@ -1,3 +1,7 @@
-.container {
-    padding: 0 4rem;
+.link {
+    border: 1px solid #272727;;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }

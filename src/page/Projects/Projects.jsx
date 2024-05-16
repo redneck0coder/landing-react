@@ -1,5 +1,6 @@
 import {useState} from "react";
-import Nav from "../../components/Nav/Nav.jsx";
+import Container from "../../components/Container /Container.jsx";
+import Navbar from "../../components/Navbar/Navbar.jsx";
 import ProjectsCard from "../../components/UI/ProjectsCard/ProjectsCard.jsx";
 import cl from './Projects.module.css'
 const Projects = () => {
@@ -13,15 +14,14 @@ const Projects = () => {
 
     return (
         <>
-            <div className='navbar'>
-                <Nav></Nav>
-            </div>
-            <section className={cl.container}>
-                <h1 className={cl.title}>Projects</h1>
+            <Navbar/>
+            <Container>
                 <div className={cl.projectsList}>
-                    {projects.map(project => <ProjectsCard key={project.id} project={project}></ProjectsCard>)}
+                    {projects.map(project =>
+                        <ProjectsCard key={project.id} project={project}></ProjectsCard>)
+                    }
                 </div>
-            </section>
+            </Container>
         </>
     );
 };

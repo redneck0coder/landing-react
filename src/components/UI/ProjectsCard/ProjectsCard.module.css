@@ -1,5 +1,4 @@
 .projectCard {
-    width: 800px;
     height: 400px;
 
     display: flex;
@@ -7,6 +6,8 @@
 }
 
 .link {
+    width: 100%;
+
     transition: linear .3s;
     -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.55);
     -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.55);
@@ -41,4 +42,29 @@
     width: 50%;
     background-size: cover;
 
+}
+
+@media (max-width: 600px) {
+    .projectCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .image {
+        display: none;
+        width: 100%;
+    }
+
+    .infoTitle {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+
+    .infoDesc {
+        font-size: 1rem;
+    }
 }
